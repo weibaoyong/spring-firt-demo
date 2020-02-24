@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wby.user.mapper.UserMapper">
+
+    <insert id="insert" parameterType="com.wby.user.vo.UserVO">
+        INSERT INTO USER (ID,USERNAME,PASSWORD,AGE,SEX) VALUES (#{id},#{userName},#{passWord},#{age},#{sex});
+    </insert>
+
+    <update id="update" parameterType="com.wby.user.vo.UserVO">
+        UPDATE USER SET USERNAME=#{userName},PASSWORD=#{passWord},AGE=#{age},SEX=#{sex}
+    </update>
+
+    <select id="findById" parameterType="">
+
+    </select>
+
+    <select id="findList">
+
+    </select>
+
+    <delete id="delete">
+
+    </delete>
+</mapper>
